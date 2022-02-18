@@ -5,33 +5,23 @@ public class Cat {
     private int petAge;
     private String sizeCategory;   //small, medium, large size category
 
-    public void setPetName(String name)
-    {
-        petName = name;
-    }
 
-    public void setPetAge(int age)
-    {
-        petAge = age;
-    }
+    public void setPetName(String petName) {this.petName = petName;}
 
-    public void setSizeCategory(String size)
-    {
-        sizeCategory = size;
-    }
+    public void setPetAge(int petAge) {this.petAge = petAge;}
 
-    public String getPetName()
-    {
-        return petName;
-    }
+    public void setSizeCategory(String sizeCategory) {this.sizeCategory =  sizeCategory;}
 
-    public int getPetAge()
-    {
-        return petAge;
-    }
+    public String getPetName() {return petName;}
 
-    public String getSizeCategory()
-    {
-        return sizeCategory;
+    public int getPetAge() {return petAge;}
+
+    public String getSizeCategory() {return sizeCategory;}
+
+    public Cat() {
+        petName = "Charlie";
+        petAge = 3;
+        sizeCategory = "small";
+
     }
 }
